@@ -2,27 +2,33 @@
     background-color: #222;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .main {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
-    
+    margin-top: 20vh;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 100px 100px 100px ;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
     gap: 10px;
 }
 
 .item {
     display: flex;
-    border-style: solid;
     justify-content: center;
     align-items: center;
-    border-color: #fff;
+    border: 2px solid #fff; 
+    width: 100px;
+    height: 100px;
 }
