@@ -9,16 +9,18 @@
   <body>
     <div class="main">
       <div class="container">
-        <p class="item" id="item_1" onclick="showX()"></p>
-        <p class="item" id="item_2"></p>
-        <p class="item" id="item_3"></p>
-        <p class="item" id="item_4"></p>
-        <p class="item" id="item_5"></p>
-        <p class="item" id="item_6"></p>
-        <p class="item" id="item_7"></p>
-        <p class="item" id="item_8"></p>
-        <p class="item" id="item_9"></p>
-    </div>
+        <div class="item" cellIndex="0" onclick="move1()"></div>
+        <div class="item" cellIndex="1" onclick="move2()"></div>
+        <div class="item" cellIndex="2" onclick="showX(this)"></div>
+        <div class="item" cellIndex="3" onclick="showX(this)"></div>
+        <div class="item" cellIndex="4" onclick="showX(this)"></div>
+        <div class="item" cellIndex="5" onclick="showX(this)"></div>
+        <div class="item" cellIndex="6" onclick="showX(this)"></div>
+        <div class="item" cellIndex="7" onclick="showX(this)"></div>
+        <div class="item" cellIndex="8" onclick="showX(this)"></div>
+      </div>
+      <h2 id="statusText"></h2>
+      <button id="restartButton">Restart</button>
     </div>
 
     <script src="script.js"></script>
