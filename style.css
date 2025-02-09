@@ -1,0 +1,28 @@
+* {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px ;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+}
+
+.item {
+    display: flex;
+    border-style: solid;
+    justify-content: center;
+    align-items: center;
+    border-color: #fff;
+}
