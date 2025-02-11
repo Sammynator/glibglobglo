@@ -8,24 +8,33 @@
 }
 
 .main {
-    min-height: 100vh;
+    max-height: 100vh;
     width: 100%;
     display: flex;
     margin-top: 20vh;
-    flex-direction: column;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
-.container {
+.grid {
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(3, auto);
     gap: 10px;
 }
 
+.gridAndButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .cell {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px solid #fff; 
     width: 100px;
     height: 100px;
@@ -42,4 +51,15 @@ div {
     height: 45px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.whoStarts {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+#iStart, #botStarts {
+    padding: 10px;
 }
